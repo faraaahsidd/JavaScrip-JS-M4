@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Variable Scope</title>
+</head>
+<body>
+  <h3>Variable Scope in JS</h3>
+
+  <pre>
+// Global variable
+let x = "Global";
+
+function showScope() {
+  let y = "Local";       // Function scope
+  if (true) {
+    let z = "Block";     // Block scope
+    console.log(z);      // ✅
+  }
+  console.log(x);        // ✅
+  console.log(y);        // ✅
+  // console.log(z); ❌
+}
+
+showScope();
+console.log(x); // ✅
+  </pre>
+
+  <script>
+    let x = "Global";
+    function showScope() {
+      let y = "Local";
+      if (true) {
+        let z = "Block";
+        alert(z);
+      }
+      alert(x);
+      alert(y);
+    }
+    showScope();
+    alert(x);
+  </script>
+</body>
+</html>
