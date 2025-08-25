@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Object in JS</title>
+</head>
+<body>
+  <h3>Built-in Math Object Example</h3>
+
+  <pre>
+// Using Math object
+console.log(Math.PI);        // 3.14159...
+console.log(Math.sqrt(16));  // 4
+console.log(Math.pow(2, 3)); // 8
+console.log(Math.max(5, 9, 2)); // 9
+console.log(Math.min(5, 9, 2)); // 2
+console.log(Math.random());  // Random number (0–1)
+  </pre>
+
+  <script>
+    alert("PI = " + Math.PI);
+    alert("Square root of 16 = " + Math.sqrt(16));
+    alert("2^3 = " + Math.pow(2, 3));
+    alert("Max(5,9,2) = " + Math.max(5, 9, 2));
+    alert("Min(5,9,2) = " + Math.min(5, 9, 2));
+    alert("Random number = " + Math.random());
+  </script>
+</body>
+</html>
