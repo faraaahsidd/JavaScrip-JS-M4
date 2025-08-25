@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Parameters Example</title>
+</head>
+<body>
+  <h3>JavaScript Parameters & Optional Parameters:</h3>
+
+  <pre>
+// Function with parameters
+function multiply(a, b) {
+  return a * b;
+}
+
+// Function with optional parameter (default value)
+function greet(name = "Guest") {
+  return "Hello, " + name;
+}
+
+// Function Calls
+console.log(multiply(4, 5));     // 20
+console.log(greet("Farah"));     // Hello, Farah
+console.log(greet());            // Hello, Guest
+  </pre>
+
+  <script>
+    // Function with parameters
+    function multiply(a, b) {
+      return a * b;
+    }
+
+    // Function with optional parameter
+    function greet(name = "Guest") {
+      return "Hello, " + name;
+    }
+
+    // Calling functions
+    alert("4 * 5 = " + multiply(4, 5));
+    alert(greet("Farah"));
+    alert(greet()); // No parameter → uses default "Guest"
+  </script>
+</body>
+</html>
