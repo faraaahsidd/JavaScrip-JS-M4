@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+    .calc {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+      text-align: center;
+    }
+    input {
+      width: 80px;
+      padding: 5px;
+      margin: 5px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="calc">
+    <h2>Calculator</h2>
+    <input type="number" id="num1" placeholder="First">
+    <input type="number" id="num2" placeholder="Second">
+    <br>
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate('/')">/</button>
+    <h3 id="result">Result: </h3>
+  </div>
+
+  <script>
+function calculate(op) {
+  let n1 = parseFloat(document.getElementById("num1").value);
+  let n2 = parseFloat(document.getElementById("num2").value);
+  let result;
+
+  if (isNaN(n1) || isNaN(n2)) {
+    result = "Enter both numbers!";
+  } else {
+    switch(op) {
+      case '+': result = n1 + n2; break;
+      case '-': result = n1 - n2; break;
+      case '*': result = n1 * n2; break;
+      case '/': result = n2 !== 0 ? n1 / n2 : "Can't divide by 0"; break;
+    }
+  }
+
+  document.getElementById("result").textContent = "Result: " + result;
+}
+  </script>
+</body>
+</html>
