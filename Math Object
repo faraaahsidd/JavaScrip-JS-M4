@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Object</title>
+</head>
+<body>
+  <h3>JavaScript Math Object Example</h3>
+
+  <pre>
+// Math properties & methods
+console.log(Math.PI);         // 3.14159...
+console.log(Math.round(4.7)); // 5
+console.log(Math.floor(4.7)); // 4
+console.log(Math.ceil(4.2));  // 5
+console.log(Math.sqrt(16));   // 4
+console.log(Math.pow(2, 3));  // 8
+console.log(Math.random());   // Random (0–1)
+  </pre>
+
+  <script>
+    alert("PI = " + Math.PI);
+    alert("Round(4.7) = " + Math.round(4.7));
+    alert("Floor(4.7) = " + Math.floor(4.7));
+    alert("Ceil(4.2) = " + Math.ceil(4.2));
+    alert("Sqrt(16) = " + Math.sqrt(16));
+    alert("2^3 = " + Math.pow(2, 3));
+    alert("Random number = " + Math.random());
+  </script>
+</body>
+</html>
