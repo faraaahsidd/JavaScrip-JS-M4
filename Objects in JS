@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Objects in JS</title>
+</head>
+<body>
+  <h3>JavaScript Objects Example</h3>
+
+  <pre>
+// Object with properties and method
+let person = {
+  name: "Farah",
+  age: 20,
+  isStudent: true,
+  greet: function() {
+    return "Hello, my name is " + this.name;
+  }
+};
+
+// Accessing object data
+console.log(person.name);   // Farah
+console.log(person.age);    // 20
+console.log(person.greet()); // Hello, my name is Farah
+  </pre>
+
+  <script>
+    let person = {
+      name: "Farah",
+      age: 20,
+      isStudent: true,
+      greet: function() {
+        return "Hello, my name is " + this.name;
+      }
+    };
+
+    alert(person.name);
+    alert(person.age);
+    alert(person.greet());
+  </script>
+</body>
+</html>
+
