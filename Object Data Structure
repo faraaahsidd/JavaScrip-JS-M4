@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Object Data Structure</title>
+</head>
+<body>
+  <h3>Object as Data Structure in JS</h3>
+
+  <pre>
+// Create an object (key–value pairs)
+let student = {
+  name: "Farah",
+  age: 20,
+  course: "BCA",
+  isEnrolled: true
+};
+
+// Access data
+console.log(student.name);   // Farah
+console.log(student["age"]); // 20
+
+// Update property
+student.age = 21;
+
+// Add new property
+student.city = "Lucknow";
+
+// Delete property
+delete student.isEnrolled;
+
+console.log(student);
+  </pre>
+
+  <script>
+    let student = {
+      name: "Farah",
+      age: 20,
+      course: "BCA",
+      isEnrolled: true
+    };
+
+    alert("Name: " + student.name);
+    alert("Age: " + student["age"]);
+
+    student.age = 21;       // update
+    student.city = "Lucknow"; // add
+    delete student.isEnrolled; // remove
+
+    console.log(student);   // see final object in console
+  </script>
+</body>
+</html>
