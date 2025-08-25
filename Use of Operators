@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Operators Example</title>
+</head>
+<body>
+  <h3>JavaScript Operators:</h3>
+
+  <pre>
+// Arithmetic Operators
+let a = 10, b = 3;
+console.log(a + b);  // Addition → 13
+console.log(a - b);  // Subtraction → 7
+console.log(a * b);  // Multiplication → 30
+console.log(a / b);  // Division → 3.33
+console.log(a % b);  // Modulus → 1
+
+// Comparison Operators
+console.log(a > b);   // true
+console.log(a == b);  // false
+console.log(a != b);  // true
+
+// Logical Operators
+let x = true, y = false;
+console.log(x && y);  // false (AND)
+console.log(x || y);  // true  (OR)
+console.log(!x);      // false (NOT)
+  </pre>
+
+  <script>
+    // Arithmetic
+    let a = 10, b = 3;
+    alert("a + b = " + (a + b));
+    alert("a - b = " + (a - b));
+
+    // Comparison
+    alert("a > b = " + (a > b));
+    alert("a == b = " + (a == b));
+
+    // Logical
+    let x = true, y = false;
+    alert("x && y = " + (x && y));
+    alert("x || y = " + (x || y));
+  </script>
+</body>
+</html>
