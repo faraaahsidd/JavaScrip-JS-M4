@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Object Properties</title>
+</head>
+<body>
+  <h3>Properties of Objects in JS</h3>
+
+  <pre>
+// Define an object with properties
+let car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2022
+};
+
+// Access properties
+console.log(car.brand);   // Toyota
+console.log(car["model"]); // Corolla
+
+// Add new property
+car.color = "Red";
+
+// Change property value
+car.year = 2023;
+
+// Delete property
+delete car.model;
+
+console.log(car);
+  </pre>
+
+  <script>
+    let car = {
+      brand: "Toyota",
+      model: "Corolla",
+      year: 2022
+    };
+
+    alert("Brand: " + car.brand);
+    alert("Model: " + car["model"]);
+
+    car.color = "Red";   // Add property
+    car.year = 2023;     // Update property
+    delete car.model;    // Delete property
+
+    console.log(car);    // See result in console
+  </script>
+</body>
+</html>
