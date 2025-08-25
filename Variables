@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Variables Example</title>
+</head>
+<body>
+  <h3>JavaScript Variables:</h3>
+
+  <pre>
+// Declare variables
+let name = "Farah";      // String variable
+let age = 20;            // Number variable
+let isStudent = true;    // Boolean variable
+
+// Output variables
+console.log(name);
+console.log(age);
+console.log(isStudent);
+  </pre>
+
+  <script>
+    // JavaScript code running in browser
+    let name = "Farah";      
+    let age = 20;            
+    let isStudent = true;    
+
+    alert(name + " is " + age + " years old. Student: " + isStudent);
+  </script>
+</body>
+</html>
