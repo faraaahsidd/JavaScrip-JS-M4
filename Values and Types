@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Values and Types</title>
+</head>
+<body>
+  <h3>JavaScript Values & Types:</h3>
+
+  <pre>
+// String value
+let name = "Farah";   // Type: String
+
+// Number value
+let age = 20;         // Type: Number
+
+// Boolean value
+let isStudent = true; // Type: Boolean
+
+// Undefined value
+let x;                // Type: Undefined
+
+// Null value
+let y = null;         // Type: Object (special case)
+
+console.log(typeof name); // string
+console.log(typeof age);  // number
+console.log(typeof isStudent); // boolean
+console.log(typeof x);    // undefined
+console.log(typeof y);    // object
+  </pre>
+
+  <script>
+    let name = "Farah";   
+    let age = 20;         
+    let isStudent = true; 
+    let x;                
+    let y = null;         
+
+    alert("Name: " + name + " (" + typeof name + ")");
+    alert("Age: " + age + " (" + typeof age + ")");
+    alert("isStudent: " + isStudent + " (" + typeof isStudent + ")");
+    alert("x: " + x + " (" + typeof x + ")");
+    alert("y: " + y + " (" + typeof y + ")");
+  </script>
+</body>
+</html>
