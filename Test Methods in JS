@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Methods in JS</title>
+</head>
+<body>
+  <h3>Testing Methods in JavaScript</h3>
+
+  <pre>
+// Object with a method
+let calculator = {
+  add: function(a, b) {
+    return a + b;
+  },
+  multiply(x, y) {
+    return x * y;
+  }
+};
+
+// Testing methods
+console.log(calculator.add(5, 3));      // 8
+console.log(calculator.multiply(4, 2)); // 8
+  </pre>
+
+  <script>
+    let calculator = {
+      add: function(a, b) {
+        return a + b;
+      },
+      multiply(x, y) {
+        return x * y;
+      }
+    };
+
+    // Testing method calls
+    alert("5 + 3 = " + calculator.add(5, 3));
+    alert("4 * 2 = " + calculator.multiply(4, 2));
+  </script>
+</body>
+</html>
