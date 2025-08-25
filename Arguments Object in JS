@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arguments Object</title>
+</head>
+<body>
+  <h3>Arguments Object in JS</h3>
+
+  <pre>
+// Function using arguments object
+function showArguments() {
+  console.log("Number of arguments: " + arguments.length);
+
+  for (let i = 0; i < arguments.length; i++) {
+    console.log("Argument " + i + ": " + arguments[i]);
+  }
+}
+
+// Function calls
+showArguments(10, 20, 30);
+showArguments("Farah", true, 42, null);
+  </pre>
+
+  <script>
+    function showArguments() {
+      let output = "Number of arguments: " + arguments.length + "\n";
+      for (let i = 0; i < arguments.length; i++) {
+        output += "Argument " + i + ": " + arguments[i] + "\n";
+      }
+      alert(output);
+    }
+
+    showArguments(10, 20, 30);
+    showArguments("Farah", true, 42, null);
+  </script>
+</body>
+</html>
