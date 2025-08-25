@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Methods</title>
+</head>
+<body>
+  <h3>JavaScript Array Methods</h3>
+
+  <pre>
+// Create array
+let nums = [10, 20, 30, 40];
+
+// Add at end
+nums.push(50);     // [10,20,30,40,50]
+
+// Remove last
+nums.pop();        // [10,20,30,40]
+
+// Add at start
+nums.unshift(5);   // [5,10,20,30,40]
+
+// Remove first
+nums.shift();      // [10,20,30,40]
+
+// Join elements
+console.log(nums.join("-")); // "10-20-30-40"
+
+// Slice (copy part)
+console.log(nums.slice(1,3)); // [20,30]
+
+// Splice (add/remove)
+nums.splice(2,1,"99"); // [10,20,99,40]
+
+// Sort & Reverse
+nums.sort();   
+nums.reverse();
+
+console.log(nums);
+  </pre>
+
+  <script>
+    let nums = [10, 20, 30, 40];
+
+    nums.push(50);
+    nums.pop();
+    nums.unshift(5);
+    nums.shift();
+
+    alert("Join: " + nums.join("-"));      // "10-20-30-40"
+    alert("Slice: " + nums.slice(1,3));   // "20,30"
+
+    nums.splice(2,1,"99");
+    nums.sort();
+    nums.reverse();
+
+    console.log(nums);
+  </script>
+</body>
+</html>
