@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Switch in JS</title>
+</head>
+<body>
+  <h3>JavaScript Switch Example</h3>
+
+  <pre>
+// Switch statement
+let day = 3;
+
+switch(day) {
+  case 1: console.log("Monday"); break;
+  case 2: console.log("Tuesday"); break;
+  case 3: console.log("Wednesday"); break;
+  case 4: console.log("Thursday"); break;
+  case 5: console.log("Friday"); break;
+  default: console.log("Weekend");
+}
+  </pre>
+
+  <script>
+    let day = 3; // Change the value to test
+
+    switch(day) {
+      case 1: alert("Monday"); break;
+      case 2: alert("Tuesday"); break;
+      case 3: alert("Wednesday"); break;
+      case 4: alert("Thursday"); break;
+      case 5: alert("Friday"); break;
+      default: alert("Weekend");
+    }
+  </script>
+</body>
+</html>
