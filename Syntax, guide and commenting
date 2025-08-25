@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Syntax, Guide and Commenting Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .keyword { color: blue; font-weight: bold; }
+    .comment { color: green; font-style: italic; }
+    .string { color: brown; }
+  </style>
+</head>
+<body>
+
+  <h2>JavaScript Syntax, Guide and Commenting</h2>
+
+  <p>Here is an example JavaScript code with <b>syntax highlighting</b> and comments:</p>
+
+  <pre id="codeBlock"></pre>
+
+  <script>
+    // JavaScript code example (to be shown on the page)
+    let codeExample = `// This is a single-line comment
+/* This is a 
+   multi-line comment */
+
+function greet(name) {
+    let message = "Hello, " + name;  // Concatenating string
+    return message;
+}
+
+// Call the function
+console.log(greet("Farah"));`;
+
+    // Highlight keywords, comments, and strings
+    let highlighted = codeExample
+      .replace(/(\/\/.*)/g, '<span class="comment">$1</span>')   // single-line comment
+      .replace(/(\/\*[\s\S]*?\*\/)/g, '<span class="comment">$1</span>') // multi-line comment
+      .replace(/\b(function|return|let|console|log)\b/g, '<span class="keyword">$1</span>') // keywords
+      .replace(/(".*?"|'.*?')/g, '<span class="string">$1</span>'); // strings
+
+    // Display in <pre> block
+    document.getElementById("codeBlock").innerHTML = highlighted;
+  </script>
+
+</body>
+</html>
