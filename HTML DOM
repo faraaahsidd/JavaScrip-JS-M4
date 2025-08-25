@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML DOM Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin-top: 40px; }
+    #demo { color: blue; font-size: 20px; }
+    button { margin: 10px; padding: 8px 15px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h2>HTML DOM Demo</h2>
+  <p id="demo">This is a paragraph.</p>
+
+  <button onclick="changeText()">Change Text</button>
+  <button onclick="changeColor()">Change Color</button>
+  <button onclick="hide()">Hide</button>
+  <button onclick="show()">Show</button>
+
+  <script>
+    // Change text content
+    function changeText() {
+      document.getElementById("demo").innerHTML = "Text changed using DOM!";
+    }
+
+    // Change style
+    function changeColor() {
+      document.getElementById("demo").style.color = "red";
+    }
+
+    // Hide element
+    function hide() {
+      document.getElementById("demo").style.display = "none";
+    }
+
+    // Show element
+    function show() {
+      document.getElementById("demo").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
