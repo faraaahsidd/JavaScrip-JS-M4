@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Methods in JS</title>
+</head>
+<body>
+  <h3>JavaScript Methods Example</h3>
+
+  <pre>
+// Object with methods
+let person = {
+  name: "Farah",
+  greet: function() {       // Method
+    return "Hello, " + this.name;
+  },
+  ageNextYear() {           // Short method syntax
+    return 20 + 1;
+  }
+};
+
+// Method calls
+console.log(person.greet());      // Hello, Farah
+console.log(person.ageNextYear()); // 21
+  </pre>
+
+  <script>
+    let person = {
+      name: "Farah",
+      greet: function() {
+        return "Hello, " + this.name;
+      },
+      ageNextYear() {
+        return 20 + 1;
+      }
+    };
+
+    alert(person.greet());
+    alert("Next year age: " + person.ageNextYear());
+  </script>
+</body>
+</html>
