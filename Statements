@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Statements Example</title>
+</head>
+<body>
+  <h3>JavaScript Statements:</h3>
+
+  <pre>
+// Variable statement
+let x = 5;
+
+// If statement
+if (x > 0) {
+  console.log("x is positive");
+}
+
+// Loop statement
+for (let i = 1; i <= 3; i++) {
+  console.log("Count: " + i);
+}
+  </pre>
+
+  <script>
+    // JS code running in browser
+    let x = 5;   // Variable statement
+
+    if (x > 0) { // If statement
+      alert("x is positive");
+    }
+
+    // Loop statement
+    for (let i = 1; i <= 3; i++) {
+      console.log("Count: " + i);
+    }
+  </script>
+</body>
+</html>
