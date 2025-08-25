@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Expression Function</title>
+</head>
+<body>
+  <h3>Function Expression Example</h3>
+
+  <pre>
+// Function Expression
+let add = function(a, b) {
+  return a + b;
+};
+
+console.log(add(5, 3)); // 8
+  </pre>
+
+  <script>
+    // Function Expression
+    let add = function(a, b) {
+      return a + b;
+    };
+
+    alert("5 + 3 = " + add(5, 3));
+  </script>
+</body>
+</html>
