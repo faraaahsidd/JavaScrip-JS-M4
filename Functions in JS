@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Functions Example</title>
+</head>
+<body>
+  <h3>JavaScript Functions:</h3>
+
+  <pre>
+// Function Declaration
+function greet(name) {
+  return "Hello, " + name;
+}
+
+// Function Expression
+let square = function(num) {
+  return num * num;
+};
+
+// Arrow Function
+let add = (x, y) => x + y;
+
+// Function Calls
+console.log(greet("Farah"));  // Hello, Farah
+console.log(square(4));       // 16
+console.log(add(5, 3));       // 8
+  </pre>
+
+  <script>
+    // Function Declaration
+    function greet(name) {
+      return "Hello, " + name;
+    }
+
+    // Function Expression
+    let square = function(num) {
+      return num * num;
+    };
+
+    // Arrow Function
+    let add = (x, y) => x + y;
+
+    // Calling the functions
+    alert(greet("Farah"));  // Hello, Farah
+    alert("Square of 4 = " + square(4));
+    alert("5 + 3 = " + add(5, 3));
+  </script>
+</body>
+</html>
