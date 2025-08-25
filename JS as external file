@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Structure</title>
+</head>
+<body>
+  <div id="box">
+    <h3>Hello</h3>
+    <p>DOM <span>Tree</span></p>
+  </div>
+
+  <pre id="output"></pre>
+
+  <!-- Link external JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+<!-- below is the js file -->
+
+function showDOM(node, indent = "") {
+  let out = indent + node.nodeName + "\n";
+  node.childNodes.forEach(c => out += showDOM(c, indent + "  "));
+  return out;
+}
+
+document.getElementById("output").textContent =
+  showDOM(document.getElementById("box"));
